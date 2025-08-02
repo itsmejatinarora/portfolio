@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
-
+body{
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
 /* Basic styles for the navbar */
 .navbar {
   display: flex;
@@ -14,6 +16,8 @@
   background: #080705;
   padding: 15px 30px;
   color: #ff9800;
+  border-radius: 40px;
+  margin: 20px 20px;
 }
 
 .logo {
@@ -32,7 +36,7 @@
 }
 
 .nav-links a {
-  color: white;
+  color:white;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;
@@ -62,9 +66,9 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 0;
-    background: #222;
+    background:black;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -83,14 +87,15 @@
 /* Home Section */
 .home {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: auto;
   padding: 50px;
-  background-color:white;
   color: black;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .content {
@@ -103,13 +108,14 @@
 }
 
 .content h1 span {
-  color: #ff9800;
+  color:#ff9800;
 }
 
 .typing-text {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 15px;
+  color:#080705;
 }
 .content a {
     margin: 20px 15px ;
@@ -124,19 +130,9 @@
   border-radius: 5px;
   transition: 0.3s;
 }
-
-.btn:hover {
-  background: #ff9800;
-  color: black;
-}
-
 .btn-alt {
   background: black;
   color: white;
-}
-
-.btn-alt:hover {
-  background: #ff9800;
 }
 
 .image img {
@@ -154,7 +150,7 @@
   }
 
   .image img {
-      width: 200px;
+      width: 250px;
   }
   .content a {
       margin: 8px 15px ;
@@ -166,10 +162,11 @@
 /* About Me Section */
 .about {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #080705;
-  padding: 50px 20px;
+  justify-content: center; 
+  background-color: white;
+  padding: 50px 100px;
+  border-radius: 20px;
+  margin: 0px 20px;
 }
 
 .container {
@@ -181,26 +178,17 @@
   max-width: 1000px;
 }
 
-.image-box img {
-  width: 300px;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.image-box img:hover {
-  transform: scale(1.05);
-}
 
 .text-box {
-  max-width: 500px;
   text-align: center;
-  color: white;
+  color: black;
+
 }
 
 .text-box h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #ff9800;
+  color: black;
 }
 
 .text-box h2 span {
@@ -210,7 +198,7 @@
 .animated-text {
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: black;
   opacity: 0;
   animation: fadeIn 2s forwards;
   padding: 30px 0px;
@@ -228,8 +216,8 @@
   color: #ff9800;
 }
 .btn-about{
-  background-color: white;
-  color: black;
+  background-color:black;
+  color:white;
   font-weight: bolder;
   margin-top: 30px;
 }
@@ -249,10 +237,12 @@
       flex-direction: column;
       text-align: center;
   }
-
-  .image-box img {
-      width: 130px;
+}
+@media (max-width: 480px){
+  .about{
+    padding: 20px 50px;
   }
+
 }
 
 
@@ -260,8 +250,10 @@
 .skills {
   text-align: center;
   padding: 60px 20px;
-  background: #f5f5f5;
   justify-items: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .skills h2 {
@@ -283,8 +275,8 @@
 .skill-box {
   width: 450px;
   padding: 20px;
-  background: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.432);
+  background: black;
+  color:white;
   border-radius: 10px;
   text-align: left;
   transition: transform 0.3s;
@@ -322,25 +314,27 @@
 }
 @media (max-width: 480px){
   .skill-box {
-    width: 300px;
+    width: 280px;
   }
 }
 
 /* Projects Section */
 .projects {
   text-align: center;
-  padding: 60px 20px;
-  background: #080705 ;
+  padding: 60px 10px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .projects h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #ff9800;
+  color: black;
 }
 
 .projects h2 span {
-  color: #ff9800;
+  color: black;
 }
 
 .container-projects {
@@ -354,11 +348,10 @@
 .project-card {
   position: relative;
   width: 300px;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.226);
   transition: transform 0.3s ease-in-out;
   color: white;
+  border: 1px solid black;
 }
 
 .project-card:hover {
@@ -405,12 +398,19 @@
       gap: 50px;
   }
 }
+@media (max-width: 480px){
+  .project-card {
+    width: 270px;
+  }
+}
 
 /* Education Section */
 .education {
   text-align: center;
   padding: 60px 20px;
-  background: #eef2f3;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .education h2 {
@@ -428,7 +428,7 @@
 .edu-item {
   position: relative;
   width: 80%;
-  background: white;
+  background:black;
   padding: 20px;
   margin: 10px 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.432);
@@ -448,7 +448,7 @@
 
 .edu-item p {
   font-size: 1rem;
-  color: black;
+  color:white;
   margin-bottom: 5px;
 }
 
@@ -456,7 +456,7 @@
   display: block;
   margin-top: 5px;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -464,18 +464,25 @@
       width: 90%;
   }
 }
+@media (max-width: 480px){
+  .edu-item {
+    width: 100%;
+  }
+}
 
 /* Internships & Work Experience Section */
 .experience {
-    text-align: center;
-    padding: 60px 20px;
-    background: #080705;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .experience h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #ff9800;
+    color: black;
 }
 
 .exp-container {
@@ -487,7 +494,7 @@
 .exp-item {
     position: relative;
     width: 80%;
-    background: white;
+    background:black;
     padding: 20px;
     margin: 10px 0;
     border-radius: 10px;
@@ -506,17 +513,21 @@
 
 .exp-item p {
     font-size: 1rem;
-    color: black;
+    color:white;
     margin-bottom: 5px;
     padding: 0px 20px;
+    text-align: justify;
     
+}
+.exp-item h4{
+  color:white;
 }
 
 .exp-item span {
     display: block;
     margin: 5px 5px ;
     font-weight: bold;
-    color: black;
+    color:#ff9800;
 }
 
 @media (max-width: 600px) {
@@ -524,12 +535,19 @@
         width: 90%;
     }
 }
+@media (max-width: 480px){
+  .exp-item {
+    width: 100%;
+  }
+}
 
   /* Certifications & Achievements Section */
   .certifications {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f9f9f9;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;  
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .certifications h2 {
@@ -546,7 +564,7 @@
 
 .cert-item {
     width: 70%;
-    background: white;
+    background: black;
     padding: 20px;
     margin: 10px 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.26);
@@ -566,7 +584,7 @@
 
 .cert-item p {
     font-size: 1rem;
-    color:black;
+    color:white;
     margin: 5px 5px ;
     line-height: 25px;
 }
@@ -575,7 +593,7 @@
     display: block;
     margin-top: 5px;
     font-weight: bold;
-    color:black;
+    color:#ff9800;
 }
 
 .cert-item img {
@@ -584,7 +602,6 @@
     height: auto;
     margin-top: 10px;
     border-radius: 5px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
@@ -592,24 +609,31 @@
         width: 90%;
     }
 }
+@media (max-width: 480px){
+  .cert-item{
+    width: 100%;
+  }
+}
 
 
  /* Contact Section */
  .contact {
   text-align: center;
   padding: 60px 20px;
-  background: #080705;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .contact h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #ff9800;
+  color: black;
 }
 
 .contact p {
   font-size: 1.1rem;
-  color: white;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -632,7 +656,7 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid yellow;
+  border: 1px solid black;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -644,8 +668,9 @@
 
 .contact-form button {
   padding: 10px;
-  background: #007bff;
-  color: #fff;
+  background: black;
+  color:white;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -677,7 +702,9 @@
 .resume {
   text-align: center;
   padding: 60px 20px;
-  background: #f4f4f4;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
 }
 
 .resume h2 {
