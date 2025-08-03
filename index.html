@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
     
 </head>
 <body>
+    <!-- navbar section  -->
     <nav class="navbar">
         <div class="logo">Portfolio</div>
         <ul class="nav-links">
@@ -24,6 +32,7 @@
             <div class="bar"></div>
         </div>
     </nav>
+    <!-- home section  -->
     <section class="home" id="home">
         <div class="content">
             <h1>Hi, I'm <span>JATIN ARORA</span></h1>
@@ -36,6 +45,7 @@
             <img src="images/profile.png" alt="Profile Image">
         </div>
     </section>
+    <!-- about us section  -->
     <section class="about" id="about">
         <div class="container">
             <div class="text-box">
@@ -56,98 +66,135 @@
             </div>
         </div>
     </section>
-    
-    <section class="skills" id="skills" >
-        <h2>My <span>Skills</span></h2>
-        <div class="container">
-            <div class="skill-box" data-percentage="90">
-                <h3>HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="background: yellow;" ></div>
-                </div>
-            </div>
-            <div class="skill-box" data-percentage="85">
-                <h3>CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="background: red;" ></div>
-                </div>
-            </div>
-            <div class="skill-box" data-percentage="80">
-                <h3>JavaScript</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="background: purple;" ></div>
-                </div>
-            </div>
-            <div class="skill-box" data-percentage="75">
-                <h3>Python</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="background:rgb(255, 72, 103) ;" ></div>
-                </div>
-            </div>
-            <div class="skill-box" data-percentage="50">
-                <h3>Java</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="background:rgb(27, 2, 255) ;" ></div>
-                </div>
-            </div>
-            <div class="skill-box" data-percentage="80">
-                <h3>C Language</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="background:green;" ></div>
-                </div>
-            </div>
-        </div>
+    <!-- skills section  -->
+    <section class="skills" id="skills">
+  <h2>My <span>Skills</span></h2>
+  <div class="container">
+    <div class="skill-box" data-percentage="90">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo" />
+        <h3>HTML</h3>
+        <span class="percentage">90%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="background: yellow; width: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-box" data-percentage="85">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo" />
+        <h3>CSS</h3>
+        <span class="percentage">85%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="background: red; width: 85%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-box" data-percentage="80">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS Logo" />
+        <h3>JavaScript</h3>
+        <span class="percentage">80%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="background: purple; width: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-box" data-percentage="75">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" />
+        <h3>Python</h3>
+        <span class="percentage">75%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="background: rgb(255, 72, 103); width: 75%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-box" data-percentage="50">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" />
+        <h3>Java</h3>
+        <span class="percentage">50%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="background: rgb(27, 2, 255); width: 50%;"></div>
+      </div>
+    </div>
+
+    <div class="skill-box" data-percentage="80">
+      <div class="skill-header">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Logo" />
+        <h3>C Language</h3>
+        <span class="percentage">80%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="background: green; width: 80%;"></div>
+      </div>
+    </div>
+  </div>
     </section>
+    <!-- project section -->
     <section class="projects" id="project">
-        <h2>My <span>Projects</span></h2>
-        <div class="container-projects">
-            <div class="project-card">
-                <img src="images/project1.png" alt="Project 1">
-                <div class="overlay">
-                    <h3>TRAVEL WEBSITE</h3>
-                    <p>A modern, responsive travel website showcasing destinations, packages, and travel guides.Built with HTML, CSS, and JavaScript to deliver a smooth and engaging user experience. </p>
-                    <a href="https://itsmejatinarora.github.io/travelwebsite/" class="btn">Visit Website</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="images/project2.png" alt="Project 2">
-                <div class="overlay">
-                    <h3>RESTAURANT WEBSITE</h3>
-                    <p>A modern, responsive restaurant website to showcase menu, services, and reservations with elegant design and smooth navigation. Ideal for cafes, diners, and fine-dining establishments.</p>
-                    <a href="https://itsmejatinarora.github.io/restaurant/" class="btn">Visit Website</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="images/project3.png" alt="Project 3">
-                <div class="overlay">
-                    <h3>GYM WEBSITE</h3>
-                    <p>A professional fitness website to promote gym services, trainers, pricing plans, and client testimonials. Fully responsive with a sleek and energetic design.</p>
-                    <a href="https://itsmejatinarora.github.io/gym/" class="btn">Visit Website</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="images/project4.png" alt="Project 4">
-                <div class="overlay">
-                    <h3>E-COMMERCE WEBSITE</h3>
-                    <p>A complete online store layout for showcasing products, managing a cart, and handling checkout. Designed with clean UI, responsive design, and user-friendly navigation.</p>
-                    <a href="https://itsmejatinarora.github.io/ecommercewebsite/" class="btn">Visit Website</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="images/project5.png" alt="Project 5">
-                <div class="overlay">
-                    <h3>HOTEL WEBSITE</h3>
-                    <p>"Responsive hotel booking website with modern UI, featuring booking, location, reviews, and contact sections. Built using HTML, CSS, and JavaScript – ideal for showcasing a hotel’s services.</p>
-                    <a href="https://itsmejatinarora.github.io/hotelwebsite/" class="btn">Visit Website</a>
-                </div>
-            </div>
-        </div>
+  <h2>My <span>Projects</span></h2>
+  <div class="container-projects">
+
+    <div class="project-card">
+      <img src="images/project1.png" alt="Project 1">
+      <div class="project-info">
+        <h3>TRAVEL WEBSITE</h3>
+        <p>A modern, responsive travel website showcasing destinations, packages, and travel guides. Built with HTML, CSS, and JavaScript to deliver a smooth and engaging user experience.</p>
+        <a href="https://itsmejatinarora.github.io/travelwebsite/" class="btn-project">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project2.png" alt="Project 2">
+      <div class="project-info">
+        <h3>RESTAURANT WEBSITE</h3>
+        <p>A modern, responsive restaurant website to showcase menu, services, and reservations with elegant design and smooth navigation. Ideal for cafes, diners, and fine-dining establishments.</p>
+        <a href="https://itsmejatinarora.github.io/restaurant/" class="btn-project">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project3.png" alt="Project 3">
+      <div class="project-info">
+        <h3>GYM WEBSITE</h3>
+        <p>A professional fitness website to promote gym services, trainers, pricing plans, and client testimonials. Fully responsive with a sleek and energetic design.</p>
+        <a href="https://itsmejatinarora.github.io/gym/" class="btn-project">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project4.png" alt="Project 4">
+      <div class="project-info">
+        <h3>E-COMMERCE WEBSITE</h3>
+        <p>A complete online store layout for showcasing products, managing a cart, and handling checkout. Designed with clean UI, responsive design, and user-friendly navigation.</p>
+        <a href="https://itsmejatinarora.github.io/ecommercewebsite/" class="btn-project">Visit Website</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/project5.png" alt="Project 5">
+      <div class="project-info">
+        <h3>HOTEL WEBSITE</h3>
+        <p>Responsive hotel booking website with modern UI, featuring booking, location, reviews, and contact sections. Built using HTML, CSS, and JavaScript – ideal for showcasing a hotel’s services.</p>
+        <a href="https://itsmejatinarora.github.io/hotelwebsite/" class="btn-project">Visit Website</a>
+      </div>
+    </div>
+
+  </div>
     </section>
+    <!-- education section  -->
     <section class="education" id="education">
         <h2>Education</h2>
         <div class="edu-timeline">
             <div class="edu-item">
-                <h3>B.Tech ( Computer Science ) </h3>
+                <h3>B.Tech ( C S ) </h3>
                 <p>Vidya University</p>
                 <span>2022 - 2026</span>
             </div>
@@ -163,6 +210,7 @@
             </div>
         </div>
     </section>
+    <!-- internship course section  -->
     <section class="experience" id="experience">
         <h2>Internship Course</h2>
         <div class="exp-container">
@@ -174,6 +222,7 @@
             </div>
         </div>
     </section>
+    <!-- certifications section  -->
     <section class="certifications" id="certifications">
         <h2>Certifications & Achievements</h2>
         <div class="cert-container">
@@ -202,6 +251,7 @@
             </div>
         </div>
     </section>
+    <!-- contact us section  -->
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
         <p>Feel free to reach out to me for any project collaborations or inquiries.</p>
@@ -213,19 +263,82 @@
                 <button type="submit">Send Message</button>
             </form>
             <div class="contact-info">
-                <p>Email: Jatinarora7464@gmail.com</p>
-                <p>Phone: +91 7464903933</p>
-                <p>Location: Meerut ( Uttar Pradesh ) , India</p>
+                <p><b>Email: Jatinarora7464@gmail.com</b></p>
+                <p><b>Phone: +91 7464903933</b></p>
+                <p><b>Location: Meerut (Uttar Pradesh) , India</b></p>
             </div>
         </div>
     </section>
+     <!-- Social Media Integration Section -->
+    <section class="social-media-section">
+      <h2>Connect With Us</h2>
+      <p>
+        “Let’s connect! Follow me on social media to stay updated with my latest work and projects.”
+      </p>
+
+      <div class="social-icons">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          class="icon instagram"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          class="icon facebook"
+          title="Facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          class="icon twitter"
+          title="Twitter"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.whatsapp.com"
+          target="_blank"
+          class="icon whatsapp"
+          title="whatsapp"
+        >
+        <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.github.com"
+          target="_blank"
+          class="icon github"
+          title="github"
+        >
+        <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <div class="copy-link-message" id="copyMessage"></div>
+    </section>
+    <!-- resume section  -->
     <section class="resume" id="resume">
         <h2>My Resume</h2>
         <p>Download my resume.</p>
         <div class="resume-container">
-            <a href="RESUME.docx" download="Resume.pdf" class="resume-download">Download Resume</a>
+            <a href="RESUM.docx" download="Resume.pdf" class="resume-download">Download Resume</a>
         </div>
     </section>
+     <!-- Footer Section -->
+    <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; <span id="year"></span> Jatin Arora. All Rights Reserved.</p>
+    <button class="scroll-top" onclick="scrollToTop()">
+            ⬆ Back to Top
+          </button>
+  </div>
+    </footer>
+
     <script src="script.js"></script>
     
 </body>

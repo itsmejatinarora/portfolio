@@ -1,8 +1,9 @@
+
 function toggleMenu() {
     document.querySelector('.nav-links').classList.toggle('active');
 }
 
-const roles = [ "Full Stack Developer", "Tech Enthusiast"];
+const roles = [ "Python Full Stack Developer", "Tech Enthusiast"];
 let roleIndex = 0;
 let roleElement = document.getElementById("role");
 
@@ -34,12 +35,42 @@ document.addEventListener("DOMContentLoaded", () => {
     animateValue("projects", 0, 6, 1500);
 });
 
-
-
+// skills section 
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".skill-box").forEach(skill => {
-        let percentage = skill.getAttribute("data-percentage");
-        let progress = skill.querySelector(".progress");
-        progress.style.width = percentage + "%";
-    });
+  document.querySelectorAll(".skill-box").forEach(skill => {
+    const percentage = parseInt(skill.getAttribute("data-percentage"));
+    const progress = skill.querySelector(".progress");
+
+    if (!progress) return;
+
+    let current = 0;
+    const duration = 1500; // in ms
+    const stepTime = 15; // smaller = smoother
+    const increment = percentage / (duration / stepTime);
+
+    const animate = setInterval(() => {
+      current += increment;
+      if (current >= percentage) {
+        current = percentage;
+        clearInterval(animate);
+      }
+      progress.style.width = `${current}%`;
+    }, stepTime);
+  });
 });
+
+
+
+// footer section 
+// Set the current year dynamically
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("year").textContent = new Date().getFullYear();
+});
+
+
+
+
+// Scroll to top
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
