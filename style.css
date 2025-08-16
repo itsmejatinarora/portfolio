@@ -91,7 +91,6 @@ body {
   text-align: center;
   height: auto;
   padding: 30px;
-  color: black;
   background-color: white;
   border-radius: 20px;
   margin: 40px 20px;
@@ -244,7 +243,6 @@ body {
     padding: 20px 50px;
   }
 }
-/* skills  */
 /* Skills Section */
 .skills {
   text-align: center;
@@ -265,11 +263,13 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .skill-box {
-  width: 49%;
+  width: 45%;
   padding: 20px;
   background: black;
   color: white;
@@ -278,6 +278,9 @@ body {
   transition: transform 0.3s;
 }
 
+.skill-box:hover {
+  transform: scale(1.05);
+}
 
 .skill-header {
   display: flex;
@@ -315,18 +318,18 @@ body {
 .progress {
   height: 100%;
   width: 0;
-  transition: width 0s ;
+  transition: width 0s;
 }
 
 /* ===== Responsive Design ===== */
 @media (max-width:1068px){
-   .skill-box {
+  .skill-box {
     width: 95%;
   }
 }
+
 /* Tablets */
 @media (max-width: 768px) {
-
   .skill-box {
     width: 95%;
   }
@@ -374,6 +377,7 @@ body {
     font-size: 0.85rem;
   }
 }
+
 
 /* project section  */
 /* Projects Section */
@@ -648,6 +652,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .cert-item {

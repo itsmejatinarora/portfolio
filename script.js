@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animateValue("projects", 0, 6, 1500);
 });
 
-// skills section 
+// skills section animation
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".skill-box").forEach(skill => {
     const percentage = parseInt(skill.getAttribute("data-percentage"));
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!progress) return;
 
     let current = 0;
-    const duration = 1500; // in ms
-    const stepTime = 15; // smaller = smoother
+    const duration = 1500; // total animation time in ms
+    const stepTime = 15;   // smaller = smoother
     const increment = percentage / (duration / stepTime);
 
     const animate = setInterval(() => {
